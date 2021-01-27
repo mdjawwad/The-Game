@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+.game{
+    background-image: url('485.jpg') ;
+    background-repeat: repeat-y;
+   bottom: 50px;
+    background-size: 600px 200px;
+    
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid white;
+
+    margin: auto;
+    overflow: hidden;
+}
+ img{
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    margin: 0;
+    background-repeat: repeat-y;
+    padding: 0;
+    opacity: 100%;
+    animation: images 10s infinite linear;
+
+
+
+
+} 
+@keyframes images{
+    from {left: 500px}
+    to {left: 100px}
+}
+#character{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 50%;
+    position:relative;
+    top: 150px;
+  
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 80px;}
+    70%{top: 80px;}
+    100%{top: 150px;}
+}
+
+#block{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 25px solid red;
+    border-bottom: 10px solid transparent;
+    position: relative;
+    top: 115px;
+    left: 500px;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+h3{
+color: rgb(255, 188, 188);
+font-size: 10px;
+position: relative;
+font-family: sans-serif;
+text-align: center;
+font-weight: lighter;
+margin-top: 50px;
+
+}
